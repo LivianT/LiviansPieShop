@@ -1,0 +1,16 @@
+﻿@model HomeViewModel
+
+
+<partial name="_Carousel" />
+
+<h2>Placintele saptamanii</h2>
+<h4>Recomandarile noastre saptamanale - doar pentru tine!</h4>
+
+<div class="row">
+
+    @foreach (var pie in Model.PiesOfTheWeek)
+    {
+        <partial name="_PieCard" model="pie" />
+    }
+
+</div>
